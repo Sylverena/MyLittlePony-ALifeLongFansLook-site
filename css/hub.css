@@ -18,6 +18,15 @@
     display: flex; /* or inline-flex */
     align-items: center;
     justify-content: center;
+
+    color: black;
+    text-decoration: none;
+
+    transition: background-color .5s;
+}
+
+.generation:hover {
+    background-color: lightblue;
 }
 
 .generation.one {
