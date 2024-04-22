@@ -1,0 +1,45 @@
+.content {
+    position: relative;
+}
+
+.generation {
+    position: absolute;
+    background-color: #fff;
+
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+
+    font-family: MLP-sub, sans-serif;
+
+    left: 50%;
+    top: 50%;
+
+    display: flex; /* or inline-flex */
+    align-items: center;
+    justify-content: center;
+}
+
+.generation.one {
+    translate: -50% -155%;
+}
+
+.generation.two {
+    translate: 45% -90%;
+}
+
+.generation.three {
+    translate: 20% 30%;
+}
+
+.generation.four {
+    translate: -120% 30%;
+}
+
+.generation.five {
+    translate: -145% -90%;
+}
+
+.generation.glossary {
+    translate: -50% -48%;
+}
