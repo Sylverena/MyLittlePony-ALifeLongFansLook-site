@@ -2,22 +2,31 @@ $(document).ready(function () {
 
     let $grid = $('.content');
 
-    $('.left').hover(
-        () => {
-            $grid.css('grid-template-columns', '100% 1fr')
-        },
-        () => {
-            $grid.css('grid-template-columns', '50% 1fr')
-        }
-    )
+    setTimeout(() => {
 
-    $('.right').hover(
-        () => {
-            $grid.css('grid-template-columns', '0% 1fr')
-        },
-        () => {
-            $grid.css('grid-template-columns', '50% 1fr')
-        }
-    )
+        let $left = $('.left');
+        $left.hover(
+            () => {
+                $left.css('font-size', '5em');
+                $grid.css('grid-template-columns', '100% 1fr');
+            },
+            () => {
+                $left.css('font-size', '2.5em');
+                $grid.css('grid-template-columns', '50% 1fr');
+            }
+        )
+
+        let $right = $('.right');
+        $right.hover(
+            () => {
+                $right.css('font-size', '5em');
+                $grid.css('grid-template-columns', '0% 1fr');
+            },
+            () => {
+                $right.css('font-size', '2.5em');
+                $grid.css('grid-template-columns', '50% 1fr');
+            }
+        )
+    }, 1500)
 
 })

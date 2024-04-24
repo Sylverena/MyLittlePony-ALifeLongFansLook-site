@@ -1,7 +1,7 @@
 .content {
   display: grid;
   grid-template-columns: 50% 1fr;
-  transition: grid-template-columns 0.5s ease;
+  transition: grid-template-columns 0.75s ease;
   overflow-x: hidden;
 }
 .content a {
@@ -12,10 +12,32 @@
   align-items: center;
   font-size: 2.5em;
   white-space: nowrap;
-  transition: font-size 0.5s ease;
+  transition: font-size 0.5s ease-out;
   overflow: hidden;
+  color: white;
+  text-decoration: none;
 }
-.content a:hover {
-  font-size: 5em;
+.left h2,
+.right h2 {
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+  padding: 4% 6%;
+  min-width: 98%;
+  background-color: rgba(30, 30, 30, 0.75);
+  transition: color 0.5s;
+}
+.left h2:hover,
+.right h2:hover {
+  color: pink;
+  text-decoration: underline;
+}
+.left {
+  background-image: url("../img/mlpnfriends2.jpeg");
+  background-size: cover;
+}
+.right {
+  background-image: url("../img/mlptales.png");
+  background-size: cover;
 }
 /*# sourceMappingURL=g1.css.map */
