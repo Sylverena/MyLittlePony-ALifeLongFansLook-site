@@ -6,6 +6,7 @@
 }
 .splash {
   background: white;
+  max-width: 100vw;
 }
 .commentary p:not(p:first-of-type) {
   text-indent: 4ch;
@@ -20,7 +21,6 @@
   grid-template-columns: 50% 1fr;
 }
 .three-grid .cell {
-  min-height: 30vh;
   margin: 1em;
   padding: 2em;
   background-color: skyblue;
@@ -29,7 +29,24 @@
 .three-grid .slideshow-container {
   margin: 0 auto;
   background-color: white;
-  height: 80%;
+  overflow: hidden;
+}
+.three-grid .plot-container {
+  background-color: white;
+  padding: 1em;
+}
+.slideshow-container,
+.char-slideshow li,
+.toy-slideshow li {
+  margin: 0;
+  padding: 0;
+}
+.char-slideshow li img,
+.toy-slideshow li img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  /* Center the image horizontally */
 }
 p {
   font-family: Georgia, serif;

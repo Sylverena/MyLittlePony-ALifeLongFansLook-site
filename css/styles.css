@@ -10,6 +10,10 @@ body,
 html {
   background-color: pink;
   min-height: 100dvh;
+  max-width: 100dvw;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   display: grid;
@@ -60,7 +64,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
-h2 {
+h2,
+h3,
+h4 {
   font-family: MLP-sub, sans-serif;
 }
 .controls a {
