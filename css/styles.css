@@ -19,11 +19,46 @@ body {
 .footer {
   border: black solid 1px;
   background-color: white;
+  box-sizing: border-box;
 }
 .title {
   font-family: "MLP-head", sans-serif;
   text-align: center;
   font-size: 3.5rem;
+}
+.section {
+  margin: 0 auto;
+  width: 60%;
+  background-color: #fff;
+  padding: 1.5em;
+  box-sizing: border-box;
+}
+.section.wide {
+  width: 80%;
+}
+.section figure {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.section figure img {
+  max-width: 75%;
+}
+.section figure figcaption {
+  max-width: 60%;
+  color: grey;
+  font-style: italic;
+  word-wrap: normal;
+}
+a {
+  color: deeppink;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 h2 {
   font-family: MLP-sub, sans-serif;

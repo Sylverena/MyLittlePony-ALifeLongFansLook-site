@@ -1,0 +1,80 @@
+
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.splash {
+  background: white;
+}
+
+.commentary {
+
+  & p:not(p:first-of-type) // wow this is ugly
+  {
+    text-indent: 4ch;
+  }
+
+  hr {
+    width: 95%;
+    margin-bottom: 2em;
+  }
+}
+
+.three-grid {
+  display: grid;
+  grid-template-rows: 50% 1fr;
+  grid-template-columns: 50% 1fr;
+
+  .cell {
+    min-height: 30vh;
+    margin: 1em;
+    padding: 2em;
+
+    background-color: skyblue;
+    box-sizing: border-box;
+  }
+
+  .slideshow-container {
+    margin: 0 auto;
+    background-color: white;
+    height: 80%;
+  }
+}
+
+p {
+  font-family: Georgia, serif;
+  line-height: 1.75em;
+
+  hr + &:first-letter {
+    font-size: 350%;
+    color: black;
+    padding: 6px;
+    float: left;
+    font-weight: bold;
+  }
+}
+
+ul {
+  margin: 1.5em auto;
+  padding: 0;
+  width: 75%;
+
+  ul {
+    margin: .5em 2em;
+  }
+}
+
+li {
+  padding: 2px;
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+  margin: .25em auto;
+}
