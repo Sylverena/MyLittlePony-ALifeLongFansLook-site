@@ -27,8 +27,8 @@
   box-sizing: border-box;
 }
 .three-grid .slideshow-container {
-  margin: 0 auto;
   background-color: white;
+  padding: 1em;
   overflow: hidden;
 }
 .three-grid .plot-container {

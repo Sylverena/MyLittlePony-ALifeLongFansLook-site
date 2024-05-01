@@ -18,6 +18,6 @@ $(document).ready( function () {
         enableDrag: false,
         auto: true,
         pauseOnHover: true,
-        pause: 3500
+        pause: 3400
     });
 })
