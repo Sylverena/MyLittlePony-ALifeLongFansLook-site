@@ -1,29 +1,14 @@
-
-
 .content {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 
   box-sizing: border-box;
-  flex-direction: column;
 }
 
 .splash {
   background: white;
   max-width: 100vw;
-}
-
-.commentary {
-
-  & p:not(p:first-of-type) // wow this is ugly
-  {
-    text-indent: 4ch;
-  }
-
-  hr {
-    width: 95%;
-    margin-bottom: 2em;
-  }
 }
 
 .three-grid {
@@ -63,7 +48,21 @@
   margin: 0 auto; /* Center the image horizontally */
 }
 
+.feature-list {
+  width: 50%;
+  margin: 2em auto;
+  background-color: whitesmoke;
+  padding: 1em;
 
+  table {
+    margin: 0 auto;
+  }
+
+  td {
+    padding: .5em;
+    background-color: white;
+  }
+}
 
 p {
   font-family: Georgia, serif;

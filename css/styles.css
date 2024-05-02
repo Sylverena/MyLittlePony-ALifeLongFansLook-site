@@ -68,6 +68,8 @@ h2,
 h3,
 h4 {
   font-family: MLP-sub, sans-serif;
+  text-align: center;
+  font-size: 1.25em;
 }
 .controls a {
   position: absolute;
@@ -99,5 +101,12 @@ h4 {
 }
 .controls #back {
   left: 9.5%;
+}
+.commentary p:not(p:first-of-type) {
+  text-indent: 4ch;
+}
+.commentary hr {
+  width: 95%;
+  margin-bottom: 2em;
 }
 /*# sourceMappingURL=styles.css.map */

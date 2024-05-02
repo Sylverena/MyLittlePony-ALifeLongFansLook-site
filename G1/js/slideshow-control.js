@@ -1,4 +1,4 @@
-$(document).ready( function () {
+$(( function () {
     $('.char-slideshow').lightSlider({
         item: 3,
         slideMargin: 20,
@@ -18,6 +18,6 @@ $(document).ready( function () {
         enableDrag: false,
         auto: true,
         pauseOnHover: true,
-        pause: 3400
+        pause: 3000
     });
-})
+}))

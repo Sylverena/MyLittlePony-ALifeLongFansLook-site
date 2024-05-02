@@ -1,8 +1,8 @@
-$(document).ready(function () {
+$(function () {
 
     let $grid = $('.content');
 
-    setTimeout(() => {
+    setTimeout(() => {  // todo slow animation
 
         let $left = $('.left');
         $left.hover(

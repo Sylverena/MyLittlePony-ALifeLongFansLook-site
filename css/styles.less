@@ -82,6 +82,8 @@ a {
 
 h2,h3,h4 {
   font-family: MLP-sub, sans-serif;
+  text-align: center;
+  font-size: 1.25em;
 }
 
 .controls {
@@ -129,3 +131,17 @@ h2,h3,h4 {
     left: 9.5%
   }
 }
+
+.commentary {
+
+  & p:not(p:first-of-type) // wow this is ugly
+  {
+    text-indent: 4ch;
+  }
+
+  hr {
+    width: 95%;
+    margin-bottom: 2em;
+  }
+}
+
