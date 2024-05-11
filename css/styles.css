@@ -22,7 +22,7 @@ body {
 .header,
 .footer {
   border: black solid 1px;
-  background-color: white;
+  background-color: pink;
   box-sizing: border-box;
 }
 .title {
@@ -33,9 +33,13 @@ body {
 .section {
   margin: 0 auto;
   width: 60%;
+  min-height: 100%;
   background-color: #fff;
   padding: 1.5em;
   box-sizing: border-box;
+}
+.section.commentary {
+  box-shadow: black 5px 5px 5px;
 }
 .section.wide {
   width: 80%;
@@ -56,6 +60,7 @@ body {
   color: grey;
   font-style: italic;
   word-wrap: normal;
+  text-align: center;
 }
 a {
   color: deeppink;
